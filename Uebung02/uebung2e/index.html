@@ -6,31 +6,93 @@
     </head>
 
     <body>
+        <header><h1>Web Programmierung</h1></header>
         <!-- Navigation-->
-        <nav>
-            <h3>Navigation</h3>
-        <ul>
-            <li>HTML
-                <ul>
-                <li>Grundgerüst</li>
-                </ul>
-            </li>
-                
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Kontakt</li>
-        </ul>
+        <nav id="navigation">
+            <h2>Navigation</h2>
+        <ol>
+            <li><a href="#kapitel1">HTML</a></li>   
+            <li><a href="#kapitel2">CSS</a></li>
+            <li><a href="#kapitel3">JavaScript</a></li>
+            <li><a href="#kapitel4">PHP</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ol>
         </nav>
 
         <!--Hauptteil-->
         <main>
+            <article id="kapitel1">
+                <header>
+                    <h2>Kapitel 1. HTML</h2>
+                </header>
+            
+                <img src="../img/HTML.png" alt="Grundgerüst" height="1024" width="1224">
+    
+                <footer>
+                <p>Erläuterung des HTML-Grundgerüsts:
+                    <ul>
+                        <li>Das &lg;DOCTYPE html&gg; definiert , dass es sich um einen HTML5 -Dokumententyp handelt.</li>
+                        <li>Das &lg;html&gg;-Element ist das Wurzelelement einer HTML-Seite mit der Angabe der Skriptsprache.</li>
+                        <li>Das &lg;head&gg;-Element enthält Metainformationen über die HTML-Seite.</li>
+                        <li>&lg;meta charset="UTF-8"&gg; legt die Zeichencodierung fest. Mit UTF-8 können Sonderzeichen direkt genutzt werden (im Deutschen zum Beispiel die Umlaute öäü).</li>
+                        <li>Das &lg;title&gg;-Element gibt einen Titel für die HTML-Seite an. Dieser wird in der Titelleiste des Browsers oder in der Registerkarte der Seite angezeigt.</li>
+                        <li>Das &lg;body&gg;-Element definiert den Textkörper des Webdokuments und ist ein Container für alle sichtbaren Inhalte, wie Überschriften, Absätze, Bilder, Hyperlinks, Tabellen, Listen usw.</li>
+                        <li>Das &lg;h1&gg;-Element definiert die erste Überschrift.</li>
+                        <li>Das &lg;p&gg;-Element definiert einen Absatz .</li>
+                    </ul>
+                </footer>
+            </article>
+            <article id="kapitel2">
+                    <header>
+                <h2> Kapitel 2. CSS</h2>
+                    </header>
 
+                     <img src="../img/CSSLogo.png" alt="CSS Logo" width="200" height="300" >
+            
+                    <footer>
+                    <p>CSS steht für Cascading Style Sheets, was übersetzt „gestufte Stilvorlagen“ bedeutet. 
+                    Es handelt sich dabei um eine Gestaltungs- und Formatierungssprache, 
+                    mit der das Aussehen von HTML-Dokumenten bestimmt wird. Es geht also um Design oder Stil, 
+                    nicht um den Inhalt einer Webseite.</p>
+                    </footer>
+            </article>
+            <article id="kapitel3">
+                        <header>
+                            <h2>Kapitel 3. JavaScript</h2>
+                        </header>
+
+                            <img src="../img/JS.png" alt="JavaScript, Logo" width="250" height="350">
+                        x
+                        <footer>
+                            <p>JavaScript ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches 
+                                HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, 
+                                Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML zu erweitern.</p>
+                        </footer>
+            </article>
+            <article id="kapitel4">
+                <head>
+                    <h2>PHP</h2>
+                </head>
+                <img src="../img/php.png" alt="PHP Logo">
+                <footer>
+                    <p>PHP ist eine Abkürzung für „Personal Home Page Tool“ 
+                        oder auch „Hypertext Preprocessor“. PHP ist eine Skript-Sprache. 
+                        Eine Skript-Sprache ist eine Programmier-Sprache, die meistens nur für 
+                        kleinere Programme genutzt wird. Sie verwenden zum Beispiel PHP für ein 
+                        Kontakt-Formular auf Ihrer Webseite.</p>
+                </footer>
+            </article>
         </main>
 
         <!--Fuß der Webseite mit einem link nach oben-->
-        <footer>
-
-        </footer>
+        <footer id="kontakt">
+            <p>
+                Kontakt: <br> E-Mail <a href="mailto:pavel.git@stud.hshl.de">pavel.git@stud.hshl.de</a> 
+                <br> Telefon <a href="tel:017657968835">017657968835</a>
+                <br> Link zur Seite <a target="_blank" href="https://www.w3schools.com">W3Schools</a>
+             </p>
+             <br>
+              <a href="#navigation">Nach oben</a>
+            </footer>
     </body>
 </html>
