@@ -1,0 +1,23 @@
+nav ul {
+    background-color: aquamarine;
+    color: lightslategray;
+}
+
+nav ul ol {
+    background-color: rgb(160, 132, 249);
+    color: black;
+}
+main article header {
+    color: cadetblue;
+}
+main article p {
+    color: brown;
+}
+h2 {
+    border-color: greenyellow;
+    color: red;
+    background-color: yellow;
+}
+p {
+    border-style: dotted;
+}
