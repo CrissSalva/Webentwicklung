@@ -1,0 +1,19 @@
+Aufgabe 5_2
+
+B. Warum wird die Rote Box jetzt so positioniert (links oben und versetzt)?
+        Die Box 2 verliert ihren Elternelement und wird dann dem nächsten höheren Elternelement zugeordnet. 
+        In diesem Fall wird die Box dem body zugeordnet, die sich dann in dem Elternelement(body) den Angaben nach positioniert.
+
+C. Warum entsteht jetzt im Gegensatz zu A. und B. eine Lücke zwischen Box1 und Box4?
+        Weil es sich um eine Relative Verschiebung handelt, die Verschiebung lässt die Öffnung zwischen Elemente, falls welche vorhanden sind.
+        Dafür sollte man die Absolute Verschiebung anwenden.
+
+D. Wofür lässt sich dieser Effekt gut nutzen?
+        Z.B. Button um schnell nach oben zu skrollen, der sich immer auf einer Position befindet.
+
+E.  Wofür lässt sich dieser Effekt gut nutzen? 
+        Damit das Navigationsbereich sich mitbewegt
+
+    Überprüfen Sie welche Browser den Effekt unterstützen.
+        Aktuelle Versionen aller Browser außer Internet Explorer unterstützen diesen Effekt.
+
