@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div, header, nav, article, main, footer {
+    border: 1px solid #1d1d1d;
+}
+
+a {
+    padding-left: 0,5em;
+    padding-right: 0,5em;
+    text-decoration: none;
+}
+
+#box1 {
+    background-color: #1d1d1d;
+}
+
+#box2 {
+    background-color: #1d1d1d;
+}
+
+#box3 {
+    background-color: #1d1d1d;
+}
+
+
+
+div.text_fett {
+    font-weight: bold;
+    color: aliceblue;
+}
+.text_weiss {
+    color: aliceblue;
+}
+
+[href] {
+    background-color: blue;
+    color: aliceblue;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+nav a::after {
+    background-color: greenyellow;
+}

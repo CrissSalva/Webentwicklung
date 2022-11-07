@@ -15,5 +15,10 @@ E.  Wofür lässt sich dieser Effekt gut nutzen?
         Damit das Navigationsbereich sich mitbewegt
 
     Überprüfen Sie welche Browser den Effekt unterstützen.
-        Aktuelle Versionen aller Browser außer Internet Explorer unterstützen diesen Effekt.
+        Aktuelle Versionen aller Browser außer Internet Explorer, unterstützen diesen Effekt.
+
+Aufgabe 5_3 Overflow
+
+        Die Mathode: "overflow: auto;" erlaubt den Inhalt durchzuskrollen
+        Die Methode: "overflow: hidden;" schneidet den Inhalt am ende der Box ab.
 
