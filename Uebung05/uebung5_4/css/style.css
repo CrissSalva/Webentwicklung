@@ -1,5 +1,6 @@
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 li a {
@@ -14,6 +15,16 @@ li a {
     align-content: center;
 }
 
+article {
+    margin: 10px;
+    background-color:rgb(100, 100, 100) ;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+
+
 a:hover {
     background-color: tomato;
 } 
@@ -21,12 +32,21 @@ a:hover {
 nav li, footer li {
     display: inline;
     background-color: rgb(112, 112, 112);
-    align-content: center;
+    align-content: left;
 }
 
+main footer {
+    background-color:rgb(100, 100, 100) ;
+    border-radius: 15px;
+    width: 1920px;
+    height: 105px;
+}
 
 nav {
-    background-color:gray ;
+    background-color:rgb(100, 100, 100) ;
+    border-radius: 15px;
+    width: 1920px;
+    height: 80px;
 }
 
 nav h2 {
@@ -37,11 +57,12 @@ nav h2 {
 h2, h3 {
     color: white;
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 main header h2, main footer h2 {
     padding-top: 25px;
-    text-align: center;
+    text-align: left;
 }
 
 article header{
@@ -54,4 +75,9 @@ html {
 
 body {
     background-color: gray;
+}
+
+b {
+    color: cornsilk;
+    text-decoration: solid;
 }
