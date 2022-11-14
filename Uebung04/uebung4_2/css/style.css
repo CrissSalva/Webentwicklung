@@ -47,3 +47,7 @@ nav a:hover {
 nav a::after {
     background-color: greenyellow;
 }
+
+a:not("nav") {
+    background-color: navajowhite;
+}
