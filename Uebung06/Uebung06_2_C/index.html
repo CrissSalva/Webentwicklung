@@ -8,24 +8,25 @@
     .container1 {
       background-color: rgb(145,98,176);
       display: flex;
+      justify-content: left;
       flex-direction: row;
     }
 
-    .box2 {
-      flex-grow: 1;
-    }
-
-    .box1, .box3 {
-      flex-grow: 2;
-    }
+    
 
     [class^="box"]{
       background-color: rgb(235,151,63);
+      width: 3em;
       min-width: 6em;
+      height: 5em;
       text-align: center;
       border-radius:1em;
       margin:1em;
       padding:0.5em;
+    }
+
+    .box1, .box3 {
+      width: 12em;
     }
 
   </style>
