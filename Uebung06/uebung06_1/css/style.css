@@ -1,5 +1,5 @@
 table, th, td { 
-    border: 1px solid rgb(77, 50, 254); 
+    border: 1px solid rgb(10, 7, 32); 
     border-collapse: collapse;
     }
 
@@ -7,6 +7,20 @@ th, td {
     padding: .2em .5em; 
     }
 
-td:empty {
-    background-color: rgb(179, 179, 179);
+th:empty {
+    background-color: rgb(255, 255, 255);
     }
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+#zeile1 {
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+#red {
+    color: red;
+}
