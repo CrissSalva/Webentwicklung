@@ -8,37 +8,36 @@
     .container1 {
       background-color: rgb(145,98,176);
       display: flex;
-      justify-content: left;
+      flex-direction: row;
+      align-items: flex-start;
     }
 
     .container2 {
       background-color: rgb(145,98,176);
       display: flex;
-      justify-content: right;
+      flex-direction: row;
+      align-items: center;
     }
 
     .container3 {
       background-color: rgb(145,98,176);
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      align-items: stretch;
     }
 
     .container4 {
       background-color: rgb(145,98,176);
       display: flex;
-      justify-content: space-between;
+      flex-direction: row;
+      align-items: baseline;
     }
 
     .container5 {
       background-color: rgb(145,98,176);
       display: flex;
-      justify-content: space-around;
-    }
-
-    .container6 {
-      background-color: rgb(145,98,176);
-      display: flex;
-      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: flex-end;
     }
     
 
@@ -53,8 +52,9 @@
       padding:0.5em;
     }
 
-    .box1, .box3 {
-      width: 12em;
+    .box3, .box5 {
+      height: 12em;
+      
     }
 
   </style>
@@ -72,7 +72,15 @@
   <div class="box3">
     <p>Box3</p>
   </div>
-  
+  <div class="box4">
+    <p>Box3</p>
+  </div>
+  <div class="box5">
+    <p>Box3</p>
+  </div>
+  <div class="box6">
+    <p>Box3</p>
+  </div>
 
 
 </div>
@@ -87,8 +95,15 @@
   <div class="box3">
     <p>Box3</p>
   </div>
-  
-
+  <div class="box4">
+    <p>Box3</p>
+  </div>
+  <div class="box5">
+    <p>Box3</p>
+  </div>
+  <div class="box6">
+    <p>Box3</p>
+  </div>
 
 </div>
 
@@ -102,6 +117,15 @@
   <div class="box3">
     <p>Box3</p>
   </div>
+  <div class="box4">
+    <p>Box3</p>
+  </div>
+  <div class="box5">
+    <p>Box3</p>
+  </div>
+  <div class="box6">
+    <p>Box3</p>
+  </div>
 </div>
 
 <div class="container4">
@@ -112,7 +136,16 @@
     <p>Box2</p>
   </div>
   <div class="box3">
+    <p><h4>Box3</h4></p>
+  </div>
+  <div class="box4">
     <p>Box3</p>
+  </div>
+  <div class="box5">
+    <p><h3>Box3</h3></p>
+  </div>
+  <div class="box6">
+    <p><h2>Box3</h2></p>
   </div>
 </div>
 
@@ -126,17 +159,14 @@
   <div class="box3">
     <p>Box3</p>
   </div>
-</div>
-
-<div class="container6">
-  <div class="box1">
-    <p>Box1</p>
+  <div class="box4">
+    <p>Box4</p>
   </div>
-  <div class="box2">
-    <p>Box2</p>
+  <div class="box5">
+    <p>Box5</p>
   </div>
-  <div class="box3">
-    <p>Box3</p>
+  <div class="box6">
+    <p>Box6</p>
   </div>
 </div>
 
