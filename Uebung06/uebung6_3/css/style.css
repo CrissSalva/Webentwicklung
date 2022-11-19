@@ -1,0 +1,91 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.menu1, .menu2, .menu3 {
+    flex-grow: 1;
+}
+
+.container1, .footer {
+    background-color:rgb(100, 100, 100);
+    border-radius: 20px;
+    display: flex;
+    margin-top: 2em;
+    flex-direction: row;
+}
+
+
+.box1 {
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    width: 100%;
+    border-radius:1em;
+    margin:1em;
+    padding:0.5em;
+}
+
+[class^="menu"]{
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    max-width: 33.3%;
+    align-items: stretch;
+    height: auto;
+    border-radius:1em;
+    margin:1em;
+    padding:0.5em;
+  }
+
+li a, ul a {
+    text-decoration: none;
+    background-color: rgb(40, 40, 40);
+    color: bisque;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+li {
+    margin-top: 1em;
+}
+
+div ul li a {
+    text-align: left;
+    display: inline;
+    background-color: grey;
+    margin-bottom: 2em;
+    
+}
+
+a:hover {
+    background-color: tomato;
+    text-decoration: underline;
+} 
+
+nav li, .footer li {
+    display: inline;
+}
+
+nav {
+    background-color:rgb(100, 100, 100) ;
+    border-radius: 15px;
+    padding-left: 2em;
+    width: 100%;
+    height: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: gray;
+}
+
+b {
+    color: cornsilk;
+    text-decoration: solid;
+}
