@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="DE-de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var colorIsGreen = true;
+        var image;
+        function colorChange () {
+            image = document.getElementById('bild1');
+            if (colorIsGreen == true) {   
+                image.src = 'img/Logo2.jpg';
+                colorIsGreen = false;
+            } else {
+                image.src = 'img/Logo1.jpg';
+                colorIsGreen = true;
+            }
+        }
+
+        
+
+    </script>
+
+</head>
+<body>
+    <button onclick="colorChange()">
+        Farbe wechseln
+    </button>
+    <img id="bild1" src="img/Logo1.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Webtechnologien</title>
+  
+  <style media="screen">
+   .hell {
+     background-color: white;
+   }
+   .dunkel {
+    background-color: #aaa;
+   }
+
+  </style>
+
+</head>
+<body>
+    <!-- <script>
+      alert('Herzlich Willkommen');
+    </script> -->
+    <h1>Javascipt</h1>
+    <h2>ALERT Meldung</h2>
+    <button onclick="alert('Herzlich Willkommen.');">ALERT</button>
+    <br>
+    <h2>BITTE DEN ROTEN BEREICH NICHT BERÜHREN!</h2>
+    <div id="flaeche" style="height:200px; background-color:red;"></div>
+    <h2>Strings</h2>
+    <p id="stringtest">Hallo Welt</p>
+    <button  id="btnChange">Text Ersetzen</button>
+    <br>   
+    <p>Der Text hat <span id="pErgebnis1"> Hallo ich bin Paul</span></p>
+    <button id="btnCalc1">Text Länge</button>
+    <br>
+    <p>Das Wort "World"<span id="pErgebnis2"></span></p>
+    <button id="btnCalc2">Startposition von World</button>
+    <br>
+    <p>Das siebte Zeichen aus dem String in der Console ausgeben</p>
+    <button id="btnCalc3">Console</button>
+    <br><hr><br>
+    <h2>KLassen hinzufügen</h2>
+    <p>Den Hintergrund der ersten Unterüberschrift (h2) über den Selektor getElementsByTagName ändern, indem die Klasse "dunkel" hinzugefügt wird</p>
+    <button id="btnStyle1">Hintergrund ändern</button>
+    <br>
+    <h2>Funktion Addition</h2>
+    <input type="number" id="zahl1"><br>
+    <input type="number" id="zahl2"><br>
+    <input type="number" id="summe"><br>
+    <button id="resultBt" >Berechne</button>
+    <br>
+
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        alert('Seite geladen');
+      });
+    </script> -->
+
+    
+    <script>
+
+      //Aufgabe 7.3E
+      const alarm = document.getElementById('flaeche');
+        alarm.addEventListener ('mouseover', message);
+        //alarm.addEventListener ('click',message);
+      function message () {
+          alert('ich wusste es');
+      }
+
+
+      //Aufgabe 7.3F
+      var german = true;
+      const lang = document.getElementById('btnChange');
+      function languageChange() {
+            if (german == true) {
+              document.getElementById('stringtest').innerText = "Hello World";
+                 german = false;
+            } else {
+              document.getElementById('stringtest').innerText = "Hallo Welt"; 
+              german = true;
+            }
+          }
+      lang.addEventListener ('click', languageChange);
+
+      //Aufgabe 7.3G
+      const textlaenge = document.getElementById('btnCalc1')
+      textlaenge.addEventListener ( 'click', ausgabe);
+
+      function ausgabe () {
+        console.log("Der Text hat die Länge: " + document.getElementById('pErgebnis1').innerText.length + " (inclusive Leerzeichen)");
+      }
+
+      //Aufgabe 7.3I
+      const ausgabe2 = document.getElementById('btnCalc3').addEventListener ('click', ausgabe7);
+
+      function ausgabe7 () {
+        console.log(document.getElementById('stringtest').innerText.charAt(6));
+      }
+
+      //Aufgabe 7.4J
+      const bg = document.getElementById('btnStyle1');
+      const color = document.getElementsByTagName('h2')[0];
+      var farbe = ["#222f3e"];
+      var standartColor = true;
+
+      bg.addEventListener ('click', bgchange);
+
+      function bgchange () {
+        if (standartColor == true) {
+          color.style.backgroundColor = farbe;
+          standartColor = false;
+        } else {
+          color.style.backgroundColor = "#FFFFFF";
+          standartColor = true;
+        }
+      } 
+
+      //Aufgabe 7.4K
+      var zahl1 = document.getElementById('zahl1').value;
+      var zahl2 = document.getElementById('zahl2').value;
+      const last = document.getElementById('resultBt');
+
+      last.addEventListener('click', func1);
+
+      function func1 (){
+        console.log(zahl1);
+        console.log(zahl2);
+        document.getElementById('summe').value = calc(zahl1, zahl2);
+      }
+      
+      function calc(var1 = 0 , var2 = 0) {
+          return var1 + var2;
+      } 
+      
+    </script>
+</body> 
+</html>
