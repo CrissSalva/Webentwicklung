@@ -1,0 +1,66 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(73, 73, 73);
+}
+
+#logo {
+    background-color: rgb(73, 73, 73);
+}
+
+.navi {
+    display: flex;
+    flex-direction: row;
+}
+
+nav div div div {
+    background-color: rgb(24, 24, 24);
+}
+
+[class^="nav"]{
+    flex-grow: 1;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+
+.m_nav {
+    margin-right: 5em;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.r_nav {
+    margin-left: 5em;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    }
+
+
+nav {
+    margin-top: 1em;
+    padding-top: 0,5em;
+    padding-bottom: 0,5em;
+}
+
+nav div {
+    border-radius: 1em;
+    color: aliceblue;
+}
+
+a:hover {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav div div div a {
+    background-color: rgb(24, 24, 24);
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav img {
+    background-color: rgb(24, 24, 24);
+}
