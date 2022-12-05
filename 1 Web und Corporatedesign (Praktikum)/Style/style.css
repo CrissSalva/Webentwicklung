@@ -18,6 +18,8 @@ nav div div div {
 
 [class^="nav"]{
     flex-grow: 1;
+    height: ;
+    max-height: 1,2em;
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
@@ -49,18 +51,9 @@ nav div {
     border-radius: 1em;
     color: aliceblue;
 }
-
-a:hover {
-    color: aliceblue;
-    text-decoration: none;
-}
-
+  
 nav div div div a {
     background-color: rgb(24, 24, 24);
     text-decoration: none;
     color: aliceblue;
-}
-
-nav img {
-    background-color: rgb(24, 24, 24);
 }
