@@ -3,11 +3,8 @@
     background-color: rgb(73, 73, 73);
 }
 
-#content1 {
-    border-radius: 10px;
-    background-color: aquamarine;
-    height: 45rem;
-    width: 100%;
+#content1 img {
+    border-radius: 45px;
 }
 
 nav {
