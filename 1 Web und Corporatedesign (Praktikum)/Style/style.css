@@ -3,8 +3,16 @@
     background-color: rgb(73, 73, 73);
 }
 
-#logo {
-    background-color: rgb(73, 73, 73);
+#content1 {
+    border-radius: 10px;
+    background-color: aquamarine;
+    height: 45rem;
+    width: 100%;
+}
+
+nav {
+    height: 3rem;
+    width: 100%;
 }
 
 .navi {
@@ -12,30 +20,53 @@
     flex-direction: row;
 }
 
-nav div div div {
-    background-color: rgb(24, 24, 24);
+[class^="table"]{
+    color: white;
+    font-size: small;
+    font-style: normal;
+    text-align: left;
+}
+
+[class^="table"] th {
+    color: greenyellow;
+}
+
+[class^="table"] th, [class^="table"] td {
+    padding: 12px 15px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+#green {
+    color: rgb(0, 255, 64);
 }
 
 [class^="nav"]{
     flex-grow: 1;
-    height: ;
-    max-height: 1,2em;
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
 }
 
+.l_nav {
+    margin-right: 10%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
 
 .m_nav {
-    margin-right: 5em;
-    flex-grow: 4;
+    flex-grow: 2;
     display: flex;
     flex-direction: row;
 }
 
 .r_nav {
-    margin-left: 5em;
-    flex-grow: 2;
+    margin-left: 5%;
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     }
@@ -51,9 +82,14 @@ nav div {
     border-radius: 1em;
     color: aliceblue;
 }
-  
+
 nav div div div a {
-    background-color: rgb(24, 24, 24);
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+}
+
+nav div div div :hover {
+    cursor:pointer;
+    color: rgb(97, 165, 255);
+    text-decoration:underline;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Webtechnologien</title>  
+  <style media="screen">
+    body {
+        background: #aaa;
+    }
+    [id="perDaten"] label {
+    display: block;
+    padding:5px;
+    margin-top:5px;       
+    }
+
+
+  </style>
+
+</head>
+<body>   
+<h1>************** Übung 9 **********************</h1>
+
+<h2>Formular</h2>
+
+<section id="wrapper">
+  <form action="" method="get" >
+    <button>Bestellen</button>
+  <fieldset>Persönliche Angaben <br>
+    <input type="text" maxlength="15" autofocus placeholder="Benutzernahme *"><br>
+    <input type="email" placeholder="E-Mail Adresse *" required><br>
+    <input type="text" maxlength="5" placeholder="Postleitzahl *" pattern="^[0-9]{5}$"><br>
+  </fieldset>
+    
+
+    <fieldset>Bestellung <br>
+      <input type="radio" value="Pizza" checked > <br>
+      <input type="radio" value="Burger">  <br>
+      <input id="schnit" type="radio" value="Schnitzel"> <br>
+      <label for="schnit"></label>
+    </fieldset>
+    
+    
+  </form>
+</section>
+
+<script> 
+</script>
+</body> 
+</html>

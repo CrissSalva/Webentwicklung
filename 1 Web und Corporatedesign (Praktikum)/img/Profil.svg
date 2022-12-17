@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <ellipse class="cls-1" cx="25.46" cy="16.6" rx="8.96" ry="8.89" transform="translate(8.65 41.92) rotate(-89.52)"/>
+    <path class="cls-1" d="M37.61,43.24c2.38,.02,4.18-2.23,3.56-4.53-1.91-6.98-8.23-12.13-15.77-12.2-7.55-.06-13.95,4.98-15.98,11.93-.67,2.29,1.1,4.57,3.48,4.59l24.72,.21Z"/>
+  </g>
+  <rect class="cls-1" x="1" y="1" width="48" height="48" rx="11.79" ry="11.79"/>
+</svg>
