@@ -32,37 +32,76 @@
     </nav>
 
     <main>
-        <div class="formboard">
-            <p><h1>Anmelden</h1></p>
-            <div>
-                <div class="logL">
-                    <p>Email</p>
-                    <p>Password</p>
-                </div>
-                    <form action="">
-                        <fieldset>
-                            <input type="email" required><br>
-                            <input type="password" required><a href="">  Password vergessen</a><br>
-                            <button>Login</button><p>Anmelden mit </p> <img src="" alt="Google"> <img src="" alt="Microsoft"> <br>
-                        </fieldset>
-                    </form>
-                <div class="logR">
 
+        
+
+        <div class="formboard">
+            <div class="title">Anmelden</div>
+            <div class="form">
+                <div class="input_field">
+                    <div></div>
+                    <label for="">E-Mail</label>
+                    <input class="input_field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> 
+                </div>
+
+                <div class="input_field">
+                    <label for="">Password</label>
+                    <input class="input" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > 
+                </div>
+
+                <div class="input_field">
+                    <input type="submit" value="Anmelden" class="btn">
                 </div>
                 
-            <form action="">
+                <div class="datareset">
+                    <div>
+                        <label class="">Anmeldedaten Speichern</label>
+                        <input class="" type="checkbox" >
+                    </div>
+            
+                    <div>
+                        <a id="pass" class="" href="">Password vergessen</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="title">Registrieren</div>
+            <div class="form">
+                <div class="input_field">
+                    <label for="">Vorname</label>
+                    <input type="text">
+                </div>
+
+                <div class="input_field">
+                    <label for="">Nachname</label>
+                    <input type="text">
+                </div>
+
+                <div class="input_field">
+                    <label for="">E-Mail</label>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">>
+                </div>
+
+                <div class="input_field">
+                    <label for="">Telefonnummer</label>
+                    <input type="text" maxlength="12" pattern="^[0-9]{5}$">
+                </div>
+
+                <div class="input_field">
+                    <label for="">Password</label>
+                    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
                 
-                <p><h1>Registrieren</h1></p>
-                <fieldset>
-                    <p>Vorname</p><input type="text"  required><br>
-                    <p>Nachname</p><input type="text" required><br>
-                    <p>E-Mail</p><input type="email" required><br>
-                    <p>Telefonnummer</p><input type="text" maxlength="12" pattern="^[0-9]{12}$">
-                    <p>Password</p><input type="password" required><br>
-                    <p>Password wiederholen</p><input type="password" required>
-                    <button>Registrieren</button> <p>Registrieren mit </p> <img src="" alt=""> <img src="" alt=""> <br>
-                </fieldset>
-            </form>
+                <div class="input_field">
+                    <label for="">Password wiederholen</label>
+                    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+
+                <div class="input_field">
+                    <input type="submit" value="Registrieren" class="btn">
+                </div>
+
             </div>
             
         </div>    
