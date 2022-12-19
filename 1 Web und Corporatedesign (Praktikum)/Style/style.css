@@ -13,6 +13,7 @@ input, button {
 }
 
 #content1 img {
+    margin-top: 30px;
     border-radius: 45px;
 }
 
@@ -36,6 +37,8 @@ h1, p {
 #pass {
     color: azure;
 }
+
+/* ANmelden/Registrieren START */
 
 .datareset {
     display: flex;
@@ -114,9 +117,14 @@ h1, p {
 }
 
 @media (max-width: 420px) {
-    .navi {
+    .foot-out{
         flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .spalte {
+        width: 90%;
+        flex-direction: column;
     }
 
     .formboard .form .input_field {
@@ -127,6 +135,12 @@ h1, p {
         margin-bottom: 5px;
     }
 }
+/* Anmelden/Registrieren Seite (END) */
+
+/* Nav Bereich START */
+#green {
+    color: greenyellow;
+}
 
 nav {
     height: 3rem;
@@ -136,85 +150,67 @@ nav {
 .navi {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-[class^="table"]{
-    color: white;
-    font-size: small;
-    font-style: normal;
-    text-align: left;
+.navlink {
+    justify-content: center;
+    color: aliceblue;
+    text-decoration: none;
 }
 
-[class^="table"] th {
-    color: greenyellow;
+.navlink:hover, #green:hover {
+    color: rgb(0, 132, 247);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
 }
 
-[class^="table"] th, [class^="table"] td {
-    padding: 12px 15px;
+.navi .elements .nav {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.foot {
-    margin-top: 5%;
+.elements {
+    padding-top: 20px;
+    padding-bottom: 10px ;
+    border-color: brown;
+    border-width: 3px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* Nav Bereich END */
+
+/* Foooter START */
+
+.foot-out {
     display: flex;
     justify-content: center;
+    margin: 15px 15px;
 }
 
-hr {
-    width: calc(100%-1em);
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+.foot-out .spalte {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 15px 15px;
 }
 
-#green {
+.column {
+    background-color: rgb(41, 41, 41);
     color: greenyellow;
+    border-radius: 8px;
 }
 
-[class^="nav"]{
-    flex-grow: 1;
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: center;
+.column, .row, h3 {
+    margin: 15px 15px;
+    font-size:medium;
+    background-color: rgb(41, 41, 41);
+    
 }
 
-.l_nav {
-    margin-right: 10%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-}
-
-.m_nav {
-    flex-grow: 2;
-    display: flex;
-    flex-direction: row;
-}
-
-.r_nav {
-    margin-left: 5%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    }
-
-
-nav {
-    margin-top: 1em;
-    padding-top: 0,5em;
-    padding-bottom: 0,5em;
-}
-
-nav div {
-    border-radius: 1em;
-    color: aliceblue;
-}
-
-nav div div div a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-nav div div div :hover {
-    cursor:pointer;
-    color: rgb(97, 165, 255);
-    text-decoration:underline;
-}
+/* Foooter */
