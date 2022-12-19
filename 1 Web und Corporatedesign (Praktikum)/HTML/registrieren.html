@@ -34,19 +34,19 @@
     <main>
 
         
-
+    
         <div class="formboard">
             <div class="title">Anmelden</div>
+            <form action="">
             <div class="form">
                 <div class="input_field">
-                    <div></div>
                     <label for="">E-Mail</label>
-                    <input class="input_field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> 
+                    <input class="input_field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
                 </div>
 
                 <div class="input_field">
                     <label for="">Password</label>
-                    <input class="input" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" > 
+                    <input class="input" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> 
                 </div>
 
                 <div class="input_field">
@@ -55,8 +55,8 @@
                 
                 <div class="datareset">
                     <div>
-                        <label class="">Anmeldedaten Speichern</label>
-                        <input class="" type="checkbox" >
+                        <label for="r1" class="">Anmeldedaten Speichern</label>
+                        <input id="r1" class="" type="checkbox" >
                     </div>
             
                     <div>
@@ -65,45 +65,47 @@
                 </div>
 
             </div>
-            
+            </form>
+
+            <form action="">
             <div class="title">Registrieren</div>
             <div class="form">
                 <div class="input_field">
                     <label for="">Vorname</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="input_field">
                     <label for="">Nachname</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
                 <div class="input_field">
                     <label for="">E-Mail</label>
-                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
 
                 <div class="input_field">
                     <label for="">Telefonnummer</label>
-                    <input type="text" maxlength="12" pattern="^[0-9]{5}$">
+                    <input type="text" maxlength="12" pattern="^[0-9]{5}$" >
                 </div>
 
                 <div class="input_field">
                     <label for="">Password</label>
-                    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
                 
                 <div class="input_field">
                     <label for="">Password wiederholen</label>
-                    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
 
                 <div class="input_field">
                     <input type="submit" value="Registrieren" class="btn">
                 </div>
-
-            </div>
             
+            </div>
+        </form>
         </div>    
         
 
