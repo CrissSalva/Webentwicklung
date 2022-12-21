@@ -147,6 +147,11 @@ nav {
     width: 100%;
 }
 
+.navr {
+    justify-content:right;
+    margin-left: 10px;
+}
+
 .navi {
     display: flex;
     flex-direction: row;
