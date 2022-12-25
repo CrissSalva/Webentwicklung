@@ -116,6 +116,8 @@ h1, p {
     color: white;
 }
 
+/* Anmelden/Registrieren Seite (END) */
+
 @media (max-width: 420px) {
     .foot-out{
         flex-direction: column;
@@ -135,7 +137,7 @@ h1, p {
         margin-bottom: 5px;
     }
 }
-/* Anmelden/Registrieren Seite (END) */
+
 
 /* Nav Bereich START */
 #green {
@@ -214,3 +216,48 @@ nav {
 }
 
 /* Foooter */
+
+/* produkt_servise Start */
+.menuname {
+    color:rgb(29, 255, 93);
+    font-size: x-large;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    background-color: rgb(154, 154, 154);
+}
+
+.untermenu .menuModel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 25px;
+
+    
+}
+
+ .choise {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-width: 2px;
+}
+
+.produktprice {
+    color: goldenrod;
+}
+
+.produktname, .produktsize, .produktdescription, .priceLabel{
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+
+}
+
+/* produkt_servise End */
