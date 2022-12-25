@@ -222,6 +222,8 @@ nav {
 
 /* Foooter */
 
+
+
 /* produkt_servise Start */
 .menuname {
     color:rgb(29, 255, 93);
@@ -236,25 +238,42 @@ nav {
 .untermenu .menuModel {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
+    align-items: flex-start;
     padding-left: 25px;
+    margin-right: 25px;
 
-    
 }
 
- .choise {
+.productImage {
+    border-radius: 15px;
+    width: 350px;
+}
+
+.untermenu .menuModel .choise {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: coral;
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    border-width: 2px;
+}
+
+.choise :hover {
+    border-color: greenyellow;
 }
 
 .produktprice {
     color: goldenrod;
 }
 
-.produktname, .produktsize, .produktdescription, .priceLabel{
+.produktmodel {
+    border-radius: 20px;
+}
+
+.produktname, .produktsize, .produktdescription, .priceLabel, .produktprice{
     color: rgb(255, 255, 255);
+    border-radius: 20px;
     padding: 2px;
 }
 
