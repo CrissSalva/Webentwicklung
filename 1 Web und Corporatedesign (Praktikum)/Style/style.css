@@ -226,35 +226,34 @@ nav {
 
 /* produkt_servise Start */
 .menuname {
-    color:rgb(29, 255, 93);
+    color:rgb(255, 255, 255);
     font-size: x-large;
     text-transform: uppercase;
     text-align: center;
     margin-top: 45px;
     margin-bottom: 25px;
-    background-color: rgb(154, 154, 154);
 }
 
 .untermenu .menuModel {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: flex-start;
-    padding-left: 25px;
-    margin-right: 25px;
 
 }
 
 .productImage {
-    border-radius: 15px;
+    border-radius: 7px;
+    margin: 5px;
     width: 350px;
 }
 
 .untermenu .menuModel .choise {
     border-style: solid;
     border-width: 2px;
-    border-radius: 15px;
-    border-color: coral;
+    border-radius: 10px;
+    border-color: wheat;
     display: flex;
     flex-direction: column;
 }
@@ -263,25 +262,168 @@ nav {
     border-color: greenyellow;
 }
 
+.priceLabel, .auswahlPreis {
+    background-color: rgb(44, 44, 44);
+    border-radius: 3px;
+    color: greenyellow;
+    margin-bottom: 5px;
+}
+
+.produktsize {
+    color: aliceblue;
+}
+
 .produktprice {
-    color: goldenrod;
+    color: aliceblue;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+.produktname, .choisename{
+    text-transform: uppercase;
+    color: aquamarine;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 2px;
 }
 
 .produktmodel {
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
-.produktname, .produktsize, .produktdescription, .priceLabel, .produktprice{
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
+.produktname, .produktsize, .produktdescription, .priceLabel{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
     padding: 2px;
+}
+
+.auswahl {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    margin-right: 10%;
+}
+
+.auswahl2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    margin-right: 10%;
+}
+
+.productColorPicture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.radiant {
+    width: 25px;
+    height: 25px;
+}
+
+.color1 {
+    flex-grow: 2;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: wheat;
+}
+
+.color2 {
+    background-color: rgb(101, 101, 255);
+    flex-grow: 2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: wheat;
+}
+
+.color3 {
+    background-color: rgb(168, 168, 168);
+    flex-grow: 2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: wheat;
+}
+
+.color4 {
+    background-color: greenyellow;
+    flex-grow: 2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: wheat;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+}
 
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.warenkorb {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(82, 189, 255);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    line-height: 20px;
+    bottom: 3%;
+    right: 25%;
+
+}
+
+.warebtn {
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.gesamtPreis {
+    width: 300px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-left: none;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+.preisLabel {
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    color: black;
+}
+
+.finalpreis {
+    margin-top: 2px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
 }
 
 /* produkt_servise End */
