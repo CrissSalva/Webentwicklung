@@ -32,20 +32,37 @@
     </nav>
 
     <main>
-            <div>
-                Kontaktfomular <br>
-                
-                Name: <input type="text" name="Name" size = "8"
-                tabindex="1" required>
+        <div>
+            Kontaktfomular <br>
+            <br>  Kontaktfomular <br> <br>
+            
+            Name: <input type="text" name="Name" size = "8"
+            tabindex="1" required>
+            <form action="kontaktformular.php" method = "post">
+                <label for = "Name_id"> Name: </label>
+                <input  id="Name_id" type = "text" name="name"> <br> <br>
 
-                E-Mail: <input type="text" name="E-Mail" size = "8"
-                tabindex="1" required>
-                
-                Ihre Nachricht: <input type="text" name="NAchricht" size = "8"
-                tabindex="1" required>
+            E-Mail: <input type="text" name="E-Mail" size = "8"
+            tabindex="1" required>
+            
+            Ihre Nachricht: <input type="text" name="NAchricht" size = "8"
+            tabindex="1" required>
+                <label for = "Email_id"> Email:</label>
+                <input  id="Email_id" type = "email" name="email" required> <br> <br>
 
-            </div>
-    </main>
+                <label for = "Betreff_id"> Betreff:</label>
+                <input  id="Betreff_id" type = "text" name="Betreff" required> <br> <br>
+
+                <label for = "Nachricht_id"> Nachricht:</label>
+                <textarea  id="Nachricht_id" rows = "15" cols="80" name="nachricht" required></textarea> <br> <br>
+                <button type="submit">Absenden</button> 
+            </form>
+
+            
+            
+        </div>
+</main>
+
 
     <footer>
         <hr>
